@@ -1,3 +1,11 @@
+/* 
+
+You have set a number of inconsistent widths to align and contain your content.
+Instead of repeating the process and creating inconsistencies, use a .container
+class to set the values once and reuse like we did in class.
+
+*/
+
 html {
     background-color: #fff;
 }
@@ -10,7 +18,7 @@ ul {
 
 .header {
     margin-top: 10rem; 
-    margin-bottom: 2px;
+    margin-bottom: 2px; /* avoid using px! Use rem */
     margin-left: 10rem;
     font-size: 1.402rem;
     text-transform:none;
@@ -23,7 +31,7 @@ ul {
 
 
 h2 {
-    margin-top: 1px;
+    margin-top: 1px; /* avoid using px! Use rem */
     margin-left: 10rem;
     font-size: 1.45rem;
     font-weight: 200;
@@ -48,8 +56,9 @@ img {
     padding-top: 3rem;
     text-align: left;
     max-width: 77%;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.5px; /* avoid using px! Use rem */
     line-height: 2.7ch;
+    /* For line-height, do not include a unit. That will use a multiplier of the font-size instead which is simpler */
     margin-left: 10rem;
 }
 
@@ -62,8 +71,9 @@ img {
     padding-top: 2rem;
     text-align: left;
     line-height: 2.4ch;
+    /* For line-height, do not include a unit. That will use a multiplier of the font-size instead which is simpler */
     max-width: 100%;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /* avoid using px! Use rem */
     
 }
 
@@ -72,15 +82,16 @@ img {
 
 .content_text3 {
     font-size: 1.65rem;
-    padding-top: 7px;
+    padding-top: 7px; /* avoid using px! Use rem */
     margin-left: 11rem;
     line-height: 2.2ch;
+    /* For line-height, do not include a unit. That will use a multiplier of the font-size instead which is simpler */
     list-style-type: circle;
 }
 
 .cite {
     font-size: 1.55rem;
-    padding-top: 7px;
+    padding-top: 7px; /* avoid using px! Use rem */
     margin-left: 11rem;
     max-width: 100%;
     font-style: italic;
